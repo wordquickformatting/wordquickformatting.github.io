@@ -3,9 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="manifest" href="assets/manifest.json" />
     <title>Word quick formatting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   </head>
   <body>
-    Hello world
+    <header class="header">
+      <div class="max-width">
+        <a href="#" id="home-link">
+          <img src="assets/logo.png" alt="" class="logo" />
+          <span>WORD QUICK FORMATTING</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a class="link-menu" href="#intro">Giới thiệu</a>
+            </li>
+            <li>
+              <a class="link-menu" href="#download">Tải về</a>
+            </li>
+            <li>
+              <a class="link-menu" href="#feedback">Phản hồi</a>
+            </li>
+            <li>
+              <a class="link-menu" href="#contact">Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="max-width banner">
+          <img
+            src="assets/SoftwarePackage.png"
+            alt="Word quick formatting software package"
+            class="software-package"
+          />
+          <div class="banner-content">
+            <h1 class="banner-title">WORD QUICK FORMATTING</h1>
+            <div class="description">
+              <p>Phần mềm Việt</p>
+              <p>Giúp người Việt định dạng văn bản</p>
+              <p>Theo đúng tiêu chuẩn Việt</p>
+            </div>
+            <div class="download-banner-container">
+              <a href="#download">
+                <button class="download-btn-banner">TẢI VỀ</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="intro">
+        <div class="max-width">
+          <h2 class="title-section">GIỚI THIỆU</h2>
+          <div class="intro-content">
+            <p>
+              Từ lâu, tiểu luận, báo cáo, đồ án, giáo án và các tài liệu quan
+              trọng khác... đã trở thành một phần quen thuộc trên các giảng
+              đường, do đó việc trình bày các văn bản này luôn đòi hỏi sự chính
+              xác, chuyên nghiệp, đồng bộ và tuân thủ theo các quy chuẩn hiện
+              hành.
+            </p>
+            <p>
+              Đối với các cá nhân và doanh nghiệp, việc tạo ra tài liệu chất
+              lượng, chuyên nghiệp và tuân thủ quy chuẩn đóng một vai trò quan
+              trọng trong việc tạo dựng hình ảnh và tiếp cận hiệu quả với đối
+              tượng khách hàng.
+            </p>
+            <p>
+              Tuy nhiên, việc định dạng văn bản một cách thủ công vẫn luôn là
+              nỗi ám ảnh với không chỉ riêng những người yếu tin học văn phòng,
+              mà ngay cả những người thường xuyên làm việc với MOS, vẫn phải tốn
+              rất nhiều thời gian để có thể tạo ra một văn bản với định dạng
+              chuẩn chỉ.
+            </p>
+            <p>
+              Để giúp giải quyết thách thức này, Word Quick Formatting với châm
+              ngôn
+              <i
+                >“Phần mềm Việt, giúp người Việt định dạng văn bản theo đúng
+                tiêu chuẩn Việt”</i
+              >
+              ra đời với mong muốn đem đến cho người dùng một giải pháp tin cậy
+              để định dạng văn bản một cách nhanh chóng, chuyên nghiệp, đảm bảo
+              tuân thủ theo các quy chuẩn hiện hành.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="why-choose"></section>
+      <section id="download"></section>
+      <section id="instruction"></section>
+      <section id="feedback"></section>
+      <section id="guarantee"></section>
+      <section id="conclusion"></section>
+    </main>
+    <footer id="contact"></footer>
+    <script src="script.js"></script>
   </body>
 </html>

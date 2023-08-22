@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #243665;
+  --yellow: #eaff00;
+  font-size: 16px;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section#banner {
+  padding: 180px 0;
+}
+
+header {
+  background-color: var(--primary);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 18px 0;
+  transition: all 0.3s ease;
+}
+
+header.sticky {
+  padding: 12px 0;
+}
+
+header .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home-link {
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.link-menu {
+  text-decoration: none;
+  color: white;
+}
+
+#home-link span {
+  transition: all 0.3s ease;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  display: block;
+  transition: color 0.5s ease;
+  margin-left: 100px;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+#banner {
+  background-color: var(--primary);
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.software-package {
+  width: 500px;
+  max-width: 100%;
+}
+
+h1.banner-title {
+  color: var(--yellow);
+  font-size: 3rem;
+  margin-block: 1rem;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.description p {
+  color: white;
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-block: 0.4rem;
+}
+
+button.download-btn-banner {
+  outline: none;
+  background-color: var(--yellow);
+  border: none;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: black;
+}
+
+.title-section {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.intro-content p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .max-width {
+    padding: 0 60px;
+  }
+
+  .nav-links li a {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 947px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .max-width {
+    max-width: 930px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: '\f00d';
+  }
+
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    display: block;
+  }
+
+  .nav-links li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  h1.banner-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .download-banner-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 546px) {
+  .max-width {
+    padding: 0 30px;
+  }
+
+  section#banner {
+    padding: 100px 0;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  h1.banner-title {
+    text-align: center;
+  }
+
+  .description p {
+    text-align: center;
+  }
+
+  button.download-btn-banner {
+    outline: none;
+    background-color: var(--yellow);
+    border: none;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .title-section {
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .intro-content p {
+    font-size: 1.1rem;
+  }
+}
