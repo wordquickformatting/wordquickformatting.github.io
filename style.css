@@ -311,6 +311,11 @@ button.download-btn-banner {
   width: 2.5rem;
 }
 
+.upgrade-container p a {
+  color: white;
+  text-decoration: none;
+}
+
 .video-container {
   display: flex;
   justify-content: center;
