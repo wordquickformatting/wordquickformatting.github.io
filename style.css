@@ -170,12 +170,8 @@ button.download-btn-banner {
   display: block;
 }
 
-.demo-1 {
-}
-
 .demo.start-btn {
   width: 150px;
-  transform: rotateX(180deg);
 }
 
 .demo.rocket-btn {
@@ -426,6 +422,35 @@ iframe {
   bottom: 6rem;
   right: 1.5rem;
   z-index: 10;
+}
+
+@media (max-width: 1440px) {
+  .software-package {
+    width: 400px;
+  }
+
+  h1.banner-title {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1.25rem;
+  }
+
+  button.download-btn-banner {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .title-section {
+    font-size: 1.75rem;
+  }
+  .float-button img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 @media (max-width: 1200px) {
