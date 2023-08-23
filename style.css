@@ -77,6 +77,26 @@ header .max-width {
 .link-menu {
   text-decoration: none;
   color: white;
+  line-height: 2rem;
+}
+
+.link-menu:after {
+  backface-visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0);
+  bottom: 0px;
+  content: ' ';
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.28s ease-in-out;
+  width: 0;
+}
+
+.link-menu:hover:after {
+  border-color: white;
+  backface-visibility: hidden;
+  transition: width 0.35s ease-in-out;
+  width: 80%;
 }
 
 #home-link span {
@@ -125,6 +145,7 @@ h1.banner-title {
   font-size: 3rem;
   margin-block: 1rem;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  animation: fadeIn ease 3s;
 }
 
 .description p {
@@ -136,8 +157,9 @@ h1.banner-title {
 
 button.download-btn-banner {
   outline: none;
-  background-color: var(--yellow);
-  border: none;
+  background: linear-gradient(to left, var(--yellow) 50%, var(--primary) 50%);
+  background-size: 200% 100%;
+  border: 2px solid var(--yellow);
   width: 150px;
   height: 50px;
   cursor: pointer;
@@ -145,6 +167,13 @@ button.download-btn-banner {
   font-size: 1.15rem;
   font-weight: 600;
   color: black;
+  background-position: right bottom;
+  transition: all 0.35s;
+}
+
+button.download-btn-banner:hover {
+  background-position: left bottom;
+  color: white;
 }
 
 .title-section {
@@ -259,16 +288,27 @@ button.download-btn-banner {
 
 .download-container button.download-button {
   outline: none;
-  border: none;
-  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  background: linear-gradient(to left, var(--primary) 50%, white 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
   width: 200px;
   height: 80px;
   cursor: pointer;
+  transition: all 0.35s;
+}
+
+.download-container button.download-button:hover {
+  background-position: left bottom;
 }
 
 .download-container button.download-button span {
   display: block;
   color: white;
+}
+
+.download-container button.download-button:hover span {
+  color: var(--primary);
 }
 
 .download-container button.download-button span.large {
@@ -305,6 +345,10 @@ button.download-btn-banner {
 
 .upgrade-container .zalo-icon {
   width: 2.5rem;
+}
+
+.upgrade-container .zalo-icon:hover {
+  animation: shake 2s infinite;
 }
 
 .upgrade-container p a {
@@ -408,6 +452,8 @@ iframe {
 .float-button img {
   width: 3.5rem;
   height: 3.5rem;
+  animation: shake 2s;
+  animation-iteration-count: infinite;
 }
 
 .zalo-float-button {
@@ -583,5 +629,41 @@ iframe {
 
   .footer-right p {
     font-size: 1.1rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(20deg);
+  }
+  5% {
+    transform: rotate(-20deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
