@@ -159,6 +159,270 @@ button.download-btn-banner {
   text-align: justify;
 }
 
+.demo-container {
+  margin-top: 80px;
+}
+
+.demo {
+  margin: auto;
+  max-width: 100%;
+  margin-block: 10px;
+  display: block;
+}
+
+.demo-1 {
+}
+
+.demo.start-btn {
+  width: 150px;
+  transform: rotateX(180deg);
+}
+
+.demo.rocket-btn {
+  width: 200px;
+  transform: rotateX(180deg);
+}
+
+.demo-2 {
+  width: 600px;
+}
+
+.demo-3 {
+  width: 1000px;
+}
+
+#why-choose {
+  background-color: var(--primary);
+}
+
+#why-choose .title-section {
+  color: white;
+}
+
+.why-choose-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 80px;
+}
+
+.why-choose-card {
+  background-color: white;
+  border-radius: 1.875rem;
+  border: 2px solid #000;
+  width: 19rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.why-choose-card .icon {
+  width: 5rem;
+}
+
+.why-choose-card .title {
+  color: #000;
+  text-align: center;
+  font-size: 1.35rem;
+  font-style: normal;
+  font-weight: 500;
+  height: 2.5rem;
+}
+
+.why-choose-card .description {
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.download-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.download-container .os {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.download-container .os-img {
+  width: 360px;
+  max-width: 80%;
+}
+
+.download-container h3.title {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.download-container button.download-button {
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.download-container button.download-button span {
+  display: block;
+  color: white;
+}
+
+.download-container button.download-button span.large {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.download-container .description {
+  margin-top: 3rem;
+  font-weight: 300;
+}
+
+#upgrade {
+  background-color: var(--primary);
+}
+
+#upgrade .title-section {
+  color: white;
+}
+
+.upgrade-container {
+  margin-top: 2rem;
+}
+
+.upgrade-container p {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.75rem;
+  margin-block: 0.75rem;
+}
+
+.upgrade-container .zalo-icon {
+  width: 2.5rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+#guarantee .title-section {
+  margin-block: 0.2rem;
+}
+
+.guarantee-container {
+  width: 50rem;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.guarantee-container p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.guarantee-container .guarantee-img {
+  width: 30rem;
+  max-width: 80%;
+}
+
+.guarantee-container ul {
+  list-style-type: none;
+}
+
+.guarantee-container ul > li {
+  margin-block: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.guarantee-container span {
+  display: block;
+}
+
+iframe {
+  width: 920px;
+  aspect-ratio: 1.72;
+  max-width: 100%;
+}
+
+#conclusion {
+  padding-top: 0;
+}
+
+#conclusion p {
+  color: #000;
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#contact {
+  background-color: var(--primary);
+}
+
+#contact .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 100px;
+  gap: 10rem;
+}
+
+.footer-banner {
+  width: 400px;
+  max-width: 100%;
+}
+
+.footer-right p {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 400;
+}
+
+.footer-right .contact {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+
+.footer-right a {
+  margin-right: 20px;
+}
+
+.footer-right .icon-footer {
+  width: 35px;
+}
+
+.float-button img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.zalo-float-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
+.messenger-float-button {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
 @media (max-width: 1200px) {
   .max-width {
     padding: 0 60px;
@@ -261,12 +525,33 @@ button.download-btn-banner {
   }
 
   .title-section {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
   }
 
   .intro-content p {
+    font-size: 1.1rem;
+  }
+
+  .guarantee-container p {
+    font-size: 1.15rem;
+  }
+
+  .guarantee-container ul > li {
+    font-size: 1rem;
+  }
+
+  #conclusion p {
+    font-size: 1.2rem;
+  }
+
+  #contact .footer-container {
+    gap: 1rem;
+    padding-block: 50px;
+  }
+
+  .footer-right p {
     font-size: 1.1rem;
   }
 }
