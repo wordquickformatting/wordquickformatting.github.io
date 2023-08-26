@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -7,6 +14,7 @@
 }
 
 ul {
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
   margin: 0;
 }
@@ -17,6 +25,7 @@ body {
   padding: 0;
   font-family: 'Lexend Deca', sans-serif;
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -44,6 +53,8 @@ header {
   width: 100%;
   z-index: 999;
   padding: 18px 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -52,15 +63,25 @@ header.sticky {
 }
 
 header .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 #home-link {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white;
 }
@@ -81,6 +102,7 @@ header .max-width {
 }
 
 .link-menu:after {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgba(0, 0, 0, 0);
   bottom: 0px;
@@ -88,18 +110,25 @@ header .max-width {
   display: block;
   margin: 0 auto;
   position: relative;
+  -webkit-transition: all 0.28s ease-in-out;
+  -o-transition: all 0.28s ease-in-out;
   transition: all 0.28s ease-in-out;
   width: 0;
 }
 
 .link-menu:hover:after {
   border-color: white;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transition: width 0.35s ease-in-out;
+  -o-transition: width 0.35s ease-in-out;
   transition: width 0.35s ease-in-out;
   width: 80%;
 }
 
 #home-link span {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -109,6 +138,8 @@ header .max-width {
 
 .nav-links li a {
   display: block;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
   margin-left: 100px;
 }
@@ -129,9 +160,16 @@ header .max-width {
 }
 
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -145,6 +183,7 @@ h1.banner-title {
   font-size: 3rem;
   margin-block: 1rem;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  -webkit-animation: fadeIn ease 3s;
   animation: fadeIn ease 3s;
 }
 
@@ -157,6 +196,14 @@ h1.banner-title {
 
 button.download-btn-banner {
   outline: none;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(50%, var(--yellow)),
+    color-stop(50%, var(--primary))
+  );
+  background: -o-linear-gradient(right, var(--yellow) 50%, var(--primary) 50%);
   background: linear-gradient(to left, var(--yellow) 50%, var(--primary) 50%);
   background-size: 200% 100%;
   border: 2px solid var(--yellow);
@@ -168,6 +215,8 @@ button.download-btn-banner {
   font-weight: 600;
   color: black;
   background-position: right bottom;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
   transition: all 0.35s;
 }
 
@@ -205,6 +254,7 @@ button.download-btn-banner:hover {
 
 .demo.rocket-btn {
   width: 200px;
+  -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
@@ -225,8 +275,13 @@ button.download-btn-banner:hover {
 }
 
 .why-choose-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 4rem;
   margin-top: 80px;
@@ -264,8 +319,13 @@ button.download-btn-banner:hover {
 }
 
 .download-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -289,12 +349,22 @@ button.download-btn-banner:hover {
 .download-container button.download-button {
   outline: none;
   border: 2px solid var(--primary);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(50%, var(--primary)),
+    color-stop(50%, white)
+  );
+  background: -o-linear-gradient(right, var(--primary) 50%, white 50%);
   background: linear-gradient(to left, var(--primary) 50%, white 50%);
   background-position: right bottom;
   background-size: 200% 100%;
   width: 200px;
   height: 80px;
   cursor: pointer;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
   transition: all 0.35s;
 }
 
@@ -335,8 +405,14 @@ button.download-btn-banner:hover {
 
 .upgrade-container p {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 1rem;
   font-size: 1.75rem;
@@ -348,6 +424,7 @@ button.download-btn-banner:hover {
 }
 
 .upgrade-container .zalo-icon:hover {
+  -webkit-animation: shake 2s infinite;
   animation: shake 2s infinite;
 }
 
@@ -357,7 +434,11 @@ button.download-btn-banner:hover {
 }
 
 .video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -419,7 +500,10 @@ iframe {
 }
 
 #contact .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-block: 100px;
   gap: 10rem;
@@ -437,7 +521,9 @@ iframe {
 }
 
 .footer-right .contact {
+  -webkit-margin-before: 0;
   margin-block-start: 0;
+  -webkit-margin-after: 10px;
   margin-block-end: 10px;
 }
 
@@ -452,7 +538,9 @@ iframe {
 .float-button img {
   width: 3.5rem;
   height: 3.5rem;
+  -webkit-animation: shake 2s;
   animation: shake 2s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -468,6 +556,10 @@ iframe {
   bottom: 6rem;
   right: 1.5rem;
   z-index: 10;
+}
+
+.fa-phone {
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1440px) {
@@ -534,6 +626,8 @@ iframe {
     background: #111;
     text-align: center;
     padding-top: 80px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -562,7 +656,11 @@ iframe {
   }
 
   .download-banner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -632,6 +730,16 @@ iframe {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -642,28 +750,68 @@ iframe {
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0% {
+    -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
   }
   5% {
+    -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
   }
 
   10% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   15% {
+    -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
   }
   20% {
+    -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
   }
 
   25% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  5% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
