@@ -79,11 +79,14 @@ header .max-width {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   color: white;
+}
+
+#home-link > span {
+  margin-left: 1rem;
 }
 
 .logo {
@@ -283,7 +286,6 @@ button.download-btn-banner:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 4rem;
   margin-top: 80px;
 }
 
@@ -294,6 +296,7 @@ button.download-btn-banner:hover {
   width: 19rem;
   padding: 2rem;
   text-align: center;
+  margin: 1rem;
 }
 
 .why-choose-card .icon {
@@ -414,7 +417,6 @@ button.download-btn-banner:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 1rem;
   font-size: 1.75rem;
   margin-block: 0.75rem;
 }
@@ -431,6 +433,7 @@ button.download-btn-banner:hover {
 .upgrade-container p a {
   color: white;
   text-decoration: none;
+  margin-left: 1rem;
 }
 
 .video-container {
@@ -505,13 +508,14 @@ iframe {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-block: 100px;
-  gap: 10rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-banner {
   width: 400px;
   max-width: 100%;
+  margin-right: 10rem;
 }
 
 .footer-right p {
@@ -598,6 +602,10 @@ iframe {
 
   .nav-links li a {
     margin-left: 60px;
+  }
+
+  .footer-banner {
+    margin-right: 0;
   }
 }
 
