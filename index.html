@@ -325,7 +325,7 @@
                 src="assets/feedback-1.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 1)"
               />
             </div>
             <div class="feedback-item">
@@ -333,7 +333,7 @@
                 src="assets/feedback-2.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 2)"
               />
             </div>
             <div class="feedback-item">
@@ -341,7 +341,7 @@
                 src="assets/feedback-3.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 3)"
               />
             </div>
             <div class="feedback-item">
@@ -349,7 +349,7 @@
                 src="assets/feedback-4.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 4)"
               />
             </div>
             <div class="feedback-item">
@@ -357,7 +357,7 @@
                 src="assets/feedback-5.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 5)"
               />
             </div>
             <div class="feedback-item">
@@ -365,7 +365,7 @@
                 src="assets/feedback-6.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 6)"
               />
             </div>
             <div class="feedback-item">
@@ -373,7 +373,7 @@
                 src="assets/feedback-7.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 7)"
               />
             </div>
             <div class="feedback-item">
@@ -381,14 +381,20 @@
                 src="assets/feedback-8.jpg"
                 alt="Feedback"
                 class="feedback-img"
-                onclick="feedbackClick(this.src)"
+                onclick="feedbackClick(this.src, 8)"
               />
             </div>
           </div>
         </div>
         <div class="modal-feedback" id="modal-feedback">
+          <div class="move move-left" id="move-left">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
           <span class="close" id="close-modal-btn">&times;</span>
           <img class="modal-content" id="feedback-modal-img" />
+          <div class="move move-right" id="move-right">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
         </div>
       </section>
       <section id="guarantee">
