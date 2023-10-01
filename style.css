@@ -566,6 +566,22 @@ iframe {
   transform: rotate(90deg);
 }
 
+.feedback-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-item {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px;
+}
+
+.feedback-img {
+  width: 100%;
+}
+
 @media (max-width: 1440px) {
   .software-package {
     width: 400px;
@@ -592,6 +608,10 @@ iframe {
   .float-button img {
     width: 3rem;
     height: 3rem;
+  }
+
+  .feedback-item {
+    width: 33%;
   }
 }
 
@@ -735,6 +755,10 @@ iframe {
 
   .footer-right p {
     font-size: 1.1rem;
+  }
+
+  .feedback-item {
+    width: 50%;
   }
 }
 
