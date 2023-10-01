@@ -17,3 +17,26 @@ document.getElementById('nav-links').addEventListener('click', () => {
   document.getElementById('nav-links').classList.remove('active');
   document.getElementById('memu-btn-icon').classList.remove('active');
 });
+
+const modal = document.getElementById('modal-feedback');
+const modalImg = document.getElementById('feedback-modal-img');
+
+const imgs = document.getElementsByClassName('feedback-img');
+
+// imgs.forEach(img => {
+//   img.onclick = () => {
+//     modal.style.display = 'block';
+//     modalImg.src = img.src;
+//   };
+// });
+
+function feedbackClick(src) {
+  modal.style.display = 'block';
+  modalImg.src = src;
+}
+
+const closeBtn = document.getElementById('close-modal-btn');
+
+closeBtn.onclick = () => {
+  modal.style.display = 'none';
+};
