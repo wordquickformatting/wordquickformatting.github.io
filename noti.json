@@ -1,4 +1,6 @@
 {
-  "messenger": "Đã có bạn cập nhật 1.1, fix một số lỗi liên quan đến đăng nhập cho win 11 và lỗi tạo footer cho một số phiên bản Word. Vui lòng truy cập https://wordquickformatting.com/#download để tải về. Nếu bạn đã có phiên bản 1.1, vui lòng bỏ qua tin nhắn này.",
+  "messenger": "Đã có bản cập nhật 1.1, fix một số lỗi liên quan đến đăng nhập cho win 11 và lỗi tạo footer cho một số phiên bản Word. 
+Vui lòng truy cập https://wordquickformatting.com/#download để tải về.
+Nếu bạn đã có phiên bản 1.1, vui lòng bỏ qua tin nhắn này.",
   "api": "http://api.wordquickformatting.com"
 }
